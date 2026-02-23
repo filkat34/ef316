@@ -1,6 +1,6 @@
 # EF UE L316 - Diversification des langages
 
-## URL du dépôt [Github](https://github.com/filkat34/ef316)
+URL du dépôt [https://github.com/filkat34/ef316](https://github.com/filkat34/ef316)
 
 ## Partie 1 : Questions
 
