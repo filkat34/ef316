@@ -18,4 +18,4 @@ Une application _Symfony_ suit une architecture SSR (Server Side Rendering) ce q
 
 ### Question 2
 
-Le cache de Symfony comme tout cache sert à stocker des données appelées à être réutilisées : cela permet d'améliorer les performances mais peut parfois poser des problèmes en développement ; c'est pour cela qu'il est recommandé de vider le cache à chaque changement majeur dans un projet.
+Le cache de Symfony comme tout cache sert à stocker des données appelées à être réutilisées : cela permet d'améliorer les performances pour éviter leur réexécution mais peut parfois poser des problèmes en développement ; c'est pour cela qu'il est recommandé de vider le cache à chaque changement majeur dans un projet afin de ne pas réutiliser des données obsolètes.
