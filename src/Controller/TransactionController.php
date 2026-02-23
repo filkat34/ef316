@@ -11,6 +11,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
+// TO DO : récupérer l'id de l'utilisateur et ne retourner
+// Que ses propres transactions
+
 #[Route('/transaction')]
 final class TransactionController extends AbstractController
 {

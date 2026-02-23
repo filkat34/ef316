@@ -14,12 +14,15 @@ class Transaction
     #[ORM\Column]
     private ?int $id = null;
 
+    // TO DO : Lier transaction à utlisateur
     //#[ORM\Column]
     //private ?int $UserId = null;
 
     #[ORM\Column(length: 255)]
     private ?string $PaymentMethod = null;
 
+    // TO DO : Permettre plusieurs catégories par 
+    //Transaction
     #[ORM\Column(length: 255)]
     private ?string $Category = null;
 
