@@ -1,25 +1,21 @@
 # EF UE L316 - Diversification des langages
 
+## URL du dépôt [Github](https://github.com/filkat34/ef316)
+
 ## Partie 1 : Questions
 
-## Partie 2 : Web app _Symfony_
+### Question 1
 
-### Mise en place de l'environnement de développement
+Une application _Symfony_ suit une architecture SSR (Server Side Rendering) ce qui veut dire que le rendu des templates TWIG se fait dans le backend. Plus précisément :
 
-- Boilerplate Symfony WebApp
+1. L'utilisateur déclenche une requête au backend (GET, POST, DELETE, PUT, etc)
 
-```bash
-symfony new ef316 --webapp
-```
+2. La requête arrive dans le backend et est gérée par le contrôleur correspondant à l'URL
 
-- Installation du bundle _EasyAdmin_
+3. La logique pour le traitement demandé par l'utilisateur est exécutée par le contrôleur côté serveur et les requêtes en base de données passent souvent par l'ORM doctrine intallé par défaut dans un projet _Symfony_
 
-```bash
-composer require easycorp/easyadmin-bundle
-```
+4. Le cotrôleur fait appel au moteur de template TWIG pour rendre le résultat de la requête côté front end.*
 
-- Mise en place d'un contrôleur et d'un template pour la page d'accueil
+### Question 2
 
-```bash
-php bin/console make:controller HomeController
-```
+Le cache de Symfony comme tout cache sert à stocker des données appelées à être réutilisées : cela permet d'améliorer les performances mais peut parfois poser des problèmes en développement ; c'est pour cela qu'il est recommandé de vider le cache à chaque changement majeur dans un projet.
